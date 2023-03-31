@@ -6,8 +6,9 @@ class Teacher(models.Model):
     name = models.CharField(max_length=50)
     email = models.CharField(max_length=50)
     password = models.CharField(max_length=50)
+    qualification = models.CharField(max_length=50,null=True)
     mobile_no = models.CharField(max_length=50)
-    address = models.TextField()
+    skills = models.TextField()
 
     class Meta:
         verbose_name_plural = "1.Teachers"
